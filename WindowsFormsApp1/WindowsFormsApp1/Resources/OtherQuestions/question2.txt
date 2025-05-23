@@ -1,0 +1,11 @@
+﻿void read_question_files()
+{
+  int i = 0;
+  foreach (string file in question_files)
+  {
+    question_strings[i] = System.IO.File.ReadAllText(file);
+    i++;
+  }
+  i = 0;
+
+}

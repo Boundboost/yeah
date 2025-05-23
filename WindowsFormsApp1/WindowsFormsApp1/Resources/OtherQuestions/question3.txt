@@ -1,0 +1,19 @@
+﻿public string purifychars(char[] inputar, int length)
+{
+
+	int index = 0;
+	int re_index = 0;
+	char[] returner = new char[length];
+	foreach (char i in inputar)
+	{
+		if (bruhalph.Contains(i))
+		{
+			returner[re_index] = i;
+			re_index++;
+		}
+		index++;
+	}
+
+	string r = new string(returner);
+	return (r.ToLower());
+}
